@@ -52,4 +52,4 @@ schema = """
     dict(schema="{schema_name}")"""
 
 on_delete = ', ondelete="{mode}"'
-on_update = ', onupdate="{mode}"'
+on_update = r', sa_column_kwargs={{ "onupdate": "{mode}" }}'
